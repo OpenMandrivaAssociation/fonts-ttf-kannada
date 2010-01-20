@@ -1,7 +1,7 @@
 Summary:	Kannada TTF fonts (Unicode encoded)
 Name:		fonts-ttf-kannada
 Version:	1.0
-Release:	%mkrel 5
+Release:	%mkrel 6
 
 Url:		http://kannada.sourceforge.net/
 # dated 2002-10-27
@@ -11,8 +11,6 @@ Group:		System/Fonts/True type
 BuildArch:	noarch
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	freetype-tools
-Requires(post): fontconfig
-Requires(postun): fontconfig
 
 %description
 Kannada TTF fonts usable to display Unicode encoded text; through text
@@ -30,16 +28,6 @@ rm -fr %buildroot
 
 install -d %buildroot/%_datadir/fonts/TTF/kannada/
 bzcat %{SOURCE0} > %buildroot/%_datadir/fonts/TTF/kannada/Sampige.ttf
-
-%post
-touch %{_datadir}/fonts/TTF
-[ -x %_bindir/fc-cache ] && %{_bindir}/fc-cache 
-
-%postun
-# 0 means a real uninstall
-if [ "$1" = "0" ]; then
-   [ -x %_bindir/fc-cache ] && %{_bindir}/fc-cache 
-fi
 
 %clean
 rm -fr %buildroot
