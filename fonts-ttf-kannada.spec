@@ -1,7 +1,7 @@
 Summary:	Kannada TTF fonts (Unicode encoded)
 Name:		fonts-ttf-kannada
 Version:	1.0
-Release:	%mkrel 8
+Release:	%mkrel 9
 
 Url:		http://kannada.sourceforge.net/
 # dated 2002-10-27
