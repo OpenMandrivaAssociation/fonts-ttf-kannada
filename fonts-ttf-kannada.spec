@@ -9,6 +9,7 @@ Source0:	http://brahmi.sourceforge.net/dl/Sampige.ttf.bz2
 License:	GPL
 Group:		System/Fonts/True type
 BuildArch:	noarch
+BuildRequires: fontconfig
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	freetype-tools
 
