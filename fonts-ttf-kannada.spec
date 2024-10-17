@@ -4,7 +4,7 @@ Version:	1.0
 Release:	22
 License:	GPLv2
 Group:		System/Fonts/True type
-Url:		http://kannada.sourceforge.net/
+Url:		https://kannada.sourceforge.net/
 # dated 2002-10-27
 Source0:	http://brahmi.sourceforge.net/dl/Sampige.ttf.bz2
 BuildArch:	noarch
